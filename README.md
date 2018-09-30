@@ -1,6 +1,6 @@
 # remark-prefix-links
 
-Remark plugin to prefix relative links.
+[Remark](https://remark.js.org/) plugin to prefix relative links.
 
 ## Example
 
