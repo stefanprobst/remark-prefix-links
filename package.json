@@ -1,0 +1,14 @@
+{
+  "name": "remark-prefix-links",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/stefanprobst/remark-prefix-links.git",
+  "author": "Stefan Probst <stefanprobst@kolabnow.com>",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "unist-util-visit": "^1.4.0"
+  }
+}
