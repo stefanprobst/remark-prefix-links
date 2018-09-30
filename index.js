@@ -8,7 +8,7 @@ function attacher(pathPrefix) {
 
   return transformer;
 
-  function transformer(tree, file) {
+  function transformer(tree) {
     visit(tree, 'link', visitor);
 
     function visitor(node) {
