@@ -9,7 +9,7 @@ function attacher(pathPrefix) {
   return transformer;
 
   function transformer(tree) {
-    visit(tree, 'link', visitor);
+    visit(tree, ['link', 'definition'], visitor);
 
     function visitor(node) {
       if (node.url && !node.url.startsWith('#') && !isUrl(node.url)) {
