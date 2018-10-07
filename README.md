@@ -15,3 +15,7 @@ const result = remark()
 console.log(result.contents);
 // Look at [this example](/prefix/example).
 ```
+
+## Tip
+
+Instead of using this as a plugin, it is also possible to just import the `withPrefix` function. This can e.g. be useful when transforming Markdown to HTML: to save one tree traversal, use `withPrefix` in a `remark-rehype` `handler` function.
