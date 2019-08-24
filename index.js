@@ -17,17 +17,8 @@ function attacher(pathPrefix) {
 }
 
 function withPrefix(node, pathPrefix) {
-  if (node.url && !node.url.startsWith('#') && !isUrl(node.url)) {
+  if (node.url && node.url.startsWith(`/`) && !node.url.startsWith(`//`)) {
     node.url = path.posix.join(pathPrefix, node.url);
   }
   return node;
-}
-
-function isUrl(url) {
-  try {
-    new URL(url);
-    return true;
-  } catch {
-    return false;
-  }
 }
