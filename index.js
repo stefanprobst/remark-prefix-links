@@ -18,7 +18,7 @@ function attacher(pathPrefix) {
 
 function withPrefix(node, pathPrefix) {
   if (node.url && !node.url.startsWith('#') && !isUrl(node.url)) {
-    node.url = path.join(pathPrefix, node.url);
+    node.url = path.posix.join(pathPrefix, node.url);
   }
   return node;
 }
